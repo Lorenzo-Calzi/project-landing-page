@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BACKGROUND */
+.background{
+    /* height: calc(100vh - 150px); */
+    height: 100vh;
+    width: 100%;
+    background-color: #bdcddc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    background-image: url("./img/background.png");
+    background-size: cover;
+    background-position: 10%;
+ 
+    .bg_left{
+        z-index: 2;
+        margin: 50px 0 0 50px;
+        /* left */
+        img{
+            height: 450px;
+            width: 550px;
+        }
+    }
+
+    /* right */
+    .bg_right{
+        z-index: 2;
+        text-align: center;
+
+        .bg_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3{
+                color: #8d1737; 
+                font-size: 20px;
+                font-weight: 400;
+                width: 500px;
+            }
+            h1{
+                color: #8d1737; 
+                font-size: 42px;
+                margin: 20px 0;
+                text-transform: uppercase;
+            }
+            h2{
+                font-size: 23px;
+                font-weight: 500;
+                width: 410px;
+                margin-bottom: 20px;
+            }
+
+            /* Button */
+            .button{
+                background-color: white;
+                padding: 15px 50px;
+                margin-bottom: 10px;
+                border-radius: 40px;
+                color: #8d1737; 
+            
+                h4{
+                    font-size: 35px;
+                }
+                span{
+                    font-size: 21px;
+                    width: 400px;
+                    line-height: 25px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    /* logo */
+    .logo{
+        position: absolute;
+        top: 0;
+        right: 0;
+        img{
+            height: 130px;
+            width: 340px;
+        }
+    }
+
+    /* bg-red */
+    .bg_red{
+        position: absolute;
+        bottom: -1%;
+        z-index: 1;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+/* FOOTER */
+#footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    /* left */
+    .left{
+        img{
+            height: 45px;
+        }
+    }
+
+    /* right */
+    .right{
+        padding: 50px 0;
+        text-align: right;
+
+        p{
+            font-weight: 500;
+            font-size: 13px;
+        }
+    }
+}
+
+
+
+
