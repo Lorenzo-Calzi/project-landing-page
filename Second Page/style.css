@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+#site_header {
+  width: 100%;
+}
+
+#site_header .bg_orange {
+  background-color: #F9B44F;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#site_header .bg_orange p {
+  font-weight: 500;
+  color: #8D1737;
+}
+
+#site_header .bg_orange .logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#site_header .jumbotron {
+  background-image: url("./img/jumbotron.png");
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#site_header .jumbotron .container {
+  width: 1000px;
+  margin: auto;
+}
+
+#site_header .jumbotron .container h1 {
+  text-transform: uppercase;
+  color: #8D1737;
+}
+
+/* MAIN */
+#site_main .paragraph {
+  z-index: 1;
+  background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+#site_main .paragraph .container {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#site_main .paragraph .container .top_paragraph {
+  text-align: center;
+  font-weight: 500;
+}
+
+#site_main .paragraph .container h3 {
+  color: #8D1737;
+}
+
+#site_main .paragraph .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#site_main .paragraph .container section .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#site_main .paragraph .container section .description h4 {
+  color: #E37F09;
+}
+
+#site_main .paragraph .container section .description div {
+  text-align: left;
+  margin: 0;
+}
+
+#site_main .paragraph .container section .description .bold {
+  display: inline-block;
+  font-weight: 600;
+}
+
+#site_main .paragraph .container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#site_main .paragraph .container .buttons .button {
+  cursor: pointer;
+  background-color: #F9B44F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#site_main .paragraph .container .buttons .button span {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+/* FOOTER */
+#site_footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#site_footer .right {
+  text-align: right;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 767px) {
+  #site_header .bg_orange {
+    height: 130px;
+  }
+  #site_header .bg_orange p {
+    font-size: 15px;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  #site_header .bg_orange img {
+    height: 30px;
+  }
+  #site_header .bg_orange .logo {
+    height: 70px;
+  }
+  #site_header .jumbotron {
+    height: 250px;
+  }
+  #site_header .jumbotron .container {
+    width: 1000px;
+  }
+  #site_header .jumbotron .container h1 {
+    font-size: 38px;
+  }
+  #site_main .paragraph .container .top_paragraph {
+    width: 520px;
+    margin: 30px 0 0 0;
+    font-size: 15px;
+  }
+  #site_main .paragraph .container h3 {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  #site_main .paragraph .container section {
+    margin-bottom: 35px;
+  }
+  #site_main .paragraph .container section img {
+    height: 75px;
+    margin: 0 40px;
+  }
+  #site_main .paragraph .container section .description {
+    width: 300px;
+  }
+  #site_main .paragraph .container section .description h4 {
+    color: #E37F09;
+    margin-bottom: 10px;
+    font-size: 17px;
+    width: 300px;
+  }
+  #site_main .paragraph .container section .description div {
+    text-align: left;
+    margin: 0;
+    font-size: 8px;
+  }
+  #site_main .paragraph .container section .description .bold {
+    display: inline-block;
+    font-weight: 600;
+  }
+  #site_main .paragraph .container section .text_right {
+    /* text-align: right; */
+  }
+  #site_main .paragraph .container section .text_right h4 {
+    text-align: left;
+    margin-right: 50px;
+  }
+  #site_main .paragraph .container .buttons {
+    margin: 70px;
+  }
+  #site_main .paragraph .container .buttons .button {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 50px;
+  }
+  #site_main .paragraph .container .buttons .button img {
+    height: 23px;
+    margin: 10px 5px 10px 10px;
+  }
+  #site_main .paragraph .container .buttons .button span {
+    font-size: 13px;
+    font-weight: 600;
+    width: 170px;
+  }
+  #site_footer .left img {
+    height: 25px;
+  }
+  #site_footer .right {
+    padding: 50px 0;
+    text-align: right;
+  }
+  #site_footer .right p {
+    font-weight: 500;
+    font-size: 7px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #site_header .bg_orange {
+    height: 150px;
+  }
+  #site_header .bg_orange p {
+    font-size: 17px;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  #site_header .bg_orange img {
+    height: 35px;
+  }
+  #site_header .bg_orange .logo {
+    height: 90px;
+  }
+  #site_header .jumbotron {
+    height: 300px;
+  }
+  #site_header .jumbotron .container {
+    width: 1000px;
+  }
+  #site_header .jumbotron .container h1 {
+    font-size: 45px;
+  }
+  #site_main .paragraph .container .top_paragraph {
+    width: 520px;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+  }
+  #site_main .paragraph .container h3 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  #site_main .paragraph .container section {
+    margin-bottom: 35px;
+  }
+  #site_main .paragraph .container section img {
+    height: 130px;
+    margin: 0 40px;
+  }
+  #site_main .paragraph .container section .description {
+    width: 400px;
+  }
+  #site_main .paragraph .container section .description h4 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    width: 450px;
+  }
+  #site_main .paragraph .container section .description div {
+    margin: 0;
+    font-size: 13px;
+  }
+  #site_main .paragraph .container section .text_right {
+    text-align: right;
+  }
+  #site_main .paragraph .container section .text_right h4 {
+    text-align: center;
+    margin-left: 50px;
+  }
+  #site_main .paragraph .container .buttons {
+    margin: 70px;
+  }
+  #site_main .paragraph .container .buttons .button {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 50px;
+  }
+  #site_main .paragraph .container .buttons .button img {
+    height: 35px;
+    margin: 10px 5px 10px 10px;
+  }
+  #site_main .paragraph .container .buttons .button span {
+    font-size: 18px;
+    font-weight: 600;
+    width: 250px;
+  }
+  #site_footer .left img {
+    height: 35px;
+  }
+  #site_footer .right {
+    padding: 50px 0;
+  }
+  #site_footer .right p {
+    font-weight: 500;
+    font-size: 10px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #site_header .bg_orange {
+    height: 200px;
+  }
+  #site_header .bg_orange p {
+    font-size: 23px;
+    width: 650px;
+    margin-bottom: 20px;
+  }
+  #site_header .bg_orange img {
+    height: 55px;
+  }
+  #site_header .bg_orange .logo {
+    height: 100px;
+  }
+  #site_header .jumbotron {
+    height: 350px;
+  }
+  #site_header .jumbotron .container {
+    width: 1000px;
+  }
+  #site_header .jumbotron .container h1 {
+    font-size: 50px;
+  }
+  #site_main .paragraph .container .top_paragraph {
+    width: 520px;
+    margin: 30px 0 0 0;
+    font-size: 17px;
+  }
+  #site_main .paragraph .container h3 {
+    font-size: 35px;
+    margin: 20px 0;
+  }
+  #site_main .paragraph .container section {
+    margin-bottom: 35px;
+  }
+  #site_main .paragraph .container section img {
+    height: 180px;
+    margin: 0 40px;
+  }
+  #site_main .paragraph .container section .description {
+    width: 600px;
+  }
+  #site_main .paragraph .container section .description h4 {
+    margin-bottom: 10px;
+    font-size: 21px;
+    width: 450px;
+  }
+  #site_main .paragraph .container section .description div {
+    margin: 0;
+  }
+  #site_main .paragraph .container section .text_right {
+    text-align: right;
+  }
+  #site_main .paragraph .container section .text_right h4 {
+    text-align: right;
+    margin-left: 153px;
+  }
+  #site_main .paragraph .container .buttons {
+    margin: 70px;
+  }
+  #site_main .paragraph .container .buttons .button {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 50px;
+  }
+  #site_main .paragraph .container .buttons .button img {
+    height: 45px;
+    margin: 10px 5px 10px 10px;
+  }
+  #site_main .paragraph .container .buttons .button span {
+    font-size: 22px;
+    font-weight: 600;
+    width: 300px;
+  }
+  #site_footer .left img {
+    height: 45px;
+  }
+  #site_footer .right {
+    padding: 50px 0;
+    text-align: right;
+  }
+  #site_footer .right p {
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
