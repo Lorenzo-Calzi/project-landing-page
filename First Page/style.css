@@ -154,7 +154,7 @@
   }
   #site_main .background .logo img {
     height: 130px;
-    width: 350px;
+    width: 300px;
   }
   #site_main .background .bg_red {
     bottom: -1%;
@@ -237,8 +237,8 @@
     right: 0;
   }
   #site_main .background .logo img {
-    height: 150px;
-    width: 400px;
+    height: 130px;
+    width: 300px;
   }
   #site_main .background .bg_red {
     bottom: -1%;
@@ -381,7 +381,7 @@
     margin-bottom: 20px;
   }
   #site_main .background .bg_right .bg_content .button {
-    padding: 15px 50px;
+    padding: 15px 40px;
     margin-bottom: 10px;
     border-radius: 40px;
   }
